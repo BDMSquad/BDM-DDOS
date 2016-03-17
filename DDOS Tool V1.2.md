@@ -1,0 +1,89 @@
+
+@echo off
+cls
+Title Welcome!
+color 0b
+cls
+echo Would you like to proceed to the booter?
+echo.
+echo.
+echo Type in Y to proceed 
+echo Type in N to exit application
+echo.
+echo.
+set /p proceed=Enter Letter::
+if "%proceed%" == "Y" goto Login
+if "%proceed%" == "N" goto Exit
+
+:Login 
+color 0b
+title Login Page
+cls
+echo.
+echo Please Login With Your Ip....
+echo.
+echo Only people who have a WhiteList Ip on our server will be able to use this tool.
+echo.
+echo.
+set /p L=Login Ip:
+if "%input%" == "69.23.221.6" goto BDM Diamondz 
+if "%input%" == "98.127.74.150" goto TOXIC
+if "%input%" == "73.164.116.107" goto BDM GlowZ
+if "%input%" == "66.87.129.115" goto Ronnelly Moore
+
+:BDM Diamondz
+color 0b
+Title Success!!
+cls
+echo.
+echo Welcome BDM Diamondz. You Have Been Signed In
+echo.
+echo Your ip is 69.23.221.6
+pause
+goto DDOS
+
+:TOXIC
+color 0b
+Title Success!!
+cls
+echo
+echo Welcome TOXIC. You Have Been Signed In
+echo.
+echo Your ip is 98.127.74.150
+pause
+goto DDOS
+
+:BDM GlowZ
+color 0b
+Title Success!!
+cls
+echo.
+echo Welcome BDM GlowZ. You Have Been Signed In.
+echo.
+echo Your ip is 73.164.116.107
+pause
+goto DDOS
+
+:RonnellyMoore
+color 0b
+Title Success!!
+cls
+echo.
+echo Welcome RonnellyMoore. You Have Been Signed In
+echo.
+echo Your ip is 66.87.129.115
+pause
+goto DDOS
+
+:DDOS
+title {BDM Diamondz DDOS Tool}
+cls
+echo Dont abuse this booter as i am not responsible on how you use it..
+echo This DDOSER was coded by BDM Diamondz
+echo.
+echo.
+echo Please Insert Victims Ip So We Can Trace It.....
+echo.
+set /p B=Ping The IP:
+ping %B%
+@ping.exe 127.0.0.1 -n 5 -w 1000 > nul
